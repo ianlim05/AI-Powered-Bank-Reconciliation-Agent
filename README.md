@@ -14,14 +14,13 @@ I developed a dual-layered automation:
 * Microsoft Power Automate
 * Copilot Studio (AI Agents)
 * SharePoint (Mock Database)
-* JSON & Prompt Engineering
 
 ## 🚀 How It Works
 1. Flow reads daily Bank and GL data.
 2. Rules engine matches clean items.
 3. AI Agent is triggered for open breaks.
 4. Agent searches historical fixes and drafts journals.
-5. Approval routing (Human-in-the-loop) via email.
+5. Approval routing (Human-in-the-loop) via email or microsoft teams approvals.
 6. Final results write to Audit Logs and Posted Journals.
 
 ## 📸 Project Showcase
@@ -29,8 +28,8 @@ I developed a dual-layered automation:
 ### 1. The Input Data (Relational Sandbox)
 *Bank transactions and GL Cash entries awaiting reconciliation.*
 <p align="center">
-  <img src="01a-bank-transactions.png" width="48%" />
-  <img src="01b-gl-cash-entries.png" width="48%" /> 
+  <img src="01a-bank-transactions.png" width="100%" />
+  <img src="01b-gl-cash-entries.png" width="100%" /> 
 </p>
 
 ### 2. The Architecture (Deterministic Rules)
@@ -42,14 +41,14 @@ I developed a dual-layered automation:
 ![Agent Reasoning](03-copilot-agent-reasoning.png)
 
 ### 4. Human-in-the-Loop Control
-*Drafted journals require explicit human approval via email before posting.*
+*Drafted journals require explicit human approval via email or microsoft teams approvals before posting.*
 ![Approval Request Email](04-approval-request.png)
 
 ### 5. Final Output & Audit Trail
-*Approved journals are posted, and all system actions are logged with timestamps.*
+*Approved journals are posted, and system actions are logged with timestamps.*
 <p align="center">
-  <img src="05a-posted-je.png" width="48%" />
-  <img src="05b-audit-log.png" width="48%" /> 
+  <img src="05a-posted-je.png" width="100%" />
+  <img src="05b-audit-log.png" width="100%" /> 
 </p>
 
 ## 🔒 Outcomes & Controls
